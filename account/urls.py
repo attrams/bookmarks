@@ -30,5 +30,8 @@ urlpatterns = [
     path(route='password-reset/complete/',
          view=auth_views.PasswordResetCompleteView.as_view(), name='password_reset_complete'),
 
+    # register account
+    path(route='register/', view=views.register, name='register'),
+
     path(route='', view=views.dashboard, name='dashboard'),
 ]
