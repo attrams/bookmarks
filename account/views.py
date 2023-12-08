@@ -53,7 +53,7 @@ def register(request):
             # save the User object
             new_user.save()
 
-            return render(request=request, template_name='account/register_done', context={'new_user': new_user})
+            return render(request=request, template_name='account/register_done.html', context={'new_user': new_user})
     else:
         user_form = UserRegistrationForm()
 
