@@ -4,4 +4,5 @@ This is a simple django project that allows users to create account and also sha
 
 ## Features Implemented
 
-- Authentication
+- Authentication.
+- Password change and reset.
