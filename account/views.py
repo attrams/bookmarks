@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login
-from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 from .forms import UserRegistrationForm, UserEditForm, ProfileEditForm
 from .models import Profile
@@ -64,7 +63,6 @@ def register(request):
 
 @login_required
 def edit(request):
-    print(request.__dict__)
     if request.method == 'POST':
         # from google bard
         # you can use both instance and data together to initialize a form.
@@ -76,6 +74,11 @@ def edit(request):
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
+            messages.success(
+                request=request, message='Profile updated successfully')
+        else:
+            messages.error(request=request,
+                           message='Error updating your profile')
     else:
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)

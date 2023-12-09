@@ -12,6 +12,8 @@
             {% endblock title %}
         </title>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{% static 'js/base.js' %}"></script>
     </head>
     <body>
         <div id="header">
@@ -40,6 +42,16 @@
                 {% endif %}
             </span>
         </div>
+        {% with messages as messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li class="{{ message.tags }}" id="message">
+                        {{ message|safe }}
+                        <a href="javascript:void(0);" class="close">X</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endwith %}
         <div id="content">
             {% block content %}
             {% endblock content %}
