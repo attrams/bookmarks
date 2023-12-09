@@ -33,5 +33,8 @@ urlpatterns = [
     # register account
     path(route='register/', view=views.register, name='register'),
 
+    # edit user and profile
+    path(route='edit/', view=views.edit, name='edit'),
+
     path(route='', view=views.dashboard, name='dashboard'),
 ]
