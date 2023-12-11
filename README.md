@@ -9,4 +9,5 @@ This is a simple django project that allows users to create account and also sha
 
 ## Libraries used
 
-- [Pillow](https://pypi.org/project/Pillow/) - For image processing.
+- [pillow](https://pypi.org/project/Pillow/) - For image processing.
+- [social-auth-app-django](https://github.com/python-social-auth/social-app-django) - for social authentication.
