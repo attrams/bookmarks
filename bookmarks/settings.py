@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # installed apps
     'social_django',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
