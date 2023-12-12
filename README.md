@@ -25,3 +25,7 @@ This is a simple django project that allows users to create account and also sha
 ```
 
 This is to allow your pc to redirect to localhost when you enter `mysite.com` in your browser.
+
+- Edit `SOCIAL_AUTH_GOOGLE_OAUTH2_KEY` and `SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET` values with your own values. You can
+  follow this [article](https://python-social-auth.readthedocs.io/en/latest/backends/google.html#google-oauth2) to
+  know how to get these values.
