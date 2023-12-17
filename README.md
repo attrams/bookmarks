@@ -8,6 +8,7 @@ This is a simple django project that allows users to create account and also sha
 - Password change and reset.
 - Social Authentication(Google and Apple).
 - Downloading Images.
+- like and unlike images.
 
 ## Libraries used
 
@@ -17,7 +18,7 @@ This is a simple django project that allows users to create account and also sha
   - [werkzeug](https://pypi.org/project/Werkzeug/) - which is required by RunServerPlus extension of Django extensions.
   - [pyOpenSSL](https://pypi.org/project/pyOpenSSL/) - which is required to use SSL/TLS functionality of RunServerPlus.
 - [requests](https://requests.readthedocs.io/en/latest/) - for downloading image by its URL.
-- [easy-thumbnails](https://github.com/SmileyChris/easy-thumbnails) - for generating thumbnails of images.
+- [easy-thumbnails](https://github.com/SmileyChris/easy-thumbnails) - for generating thumbnails of images. -[js-cookie](https://github.com/js-cookie/js-cookie) - javascript script API for handling cookies.
 
 ## PS
 
