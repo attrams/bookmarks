@@ -8,7 +8,8 @@ This is a simple django project that allows users to create account and also sha
 - Password change and reset.
 - Social Authentication(Google and Apple).
 - Downloading Images.
-- like and unlike images.
+- Like and Unlike images.
+- Infinite Scroll.
 
 ## Libraries used
 
