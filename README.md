@@ -2,6 +2,10 @@
 
 This is a simple django project that allows users to create account and also share images.
 
+## Running the application
+
+You can use the default `python manage.py runserver` to run the project or `python manage.py runserver_plus --cert-file cert.crt` to run the project using https.
+
 ## What was learnt
 
 - Authentication.
@@ -30,7 +34,7 @@ This is a simple django project that allows users to create account and also sha
 127.0.0.1 mysite.com
 ```
 
-This is to allow your pc to redirect to localhost when you enter `mysite.com` in your browser.
+This is to allow your pc to redirect to localhost when you enter `https://mysite.com:8000` in your browser.
 
 - Edit `SOCIAL_AUTH_GOOGLE_OAUTH2_KEY` and `SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET` values with your own values. You can
   follow this [article](https://python-social-auth.readthedocs.io/en/latest/backends/google.html#google-oauth2) to
