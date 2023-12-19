@@ -10,6 +10,7 @@ This is a simple django project that allows users to create account and also sha
 - Downloading Images.
 - Like and Unlike images.
 - Infinite Scroll.
+- Follow and Unfollow.
 
 ## Libraries used
 
