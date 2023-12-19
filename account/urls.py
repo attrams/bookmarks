@@ -37,4 +37,6 @@ urlpatterns = [
     path(route='edit/', view=views.edit, name='edit'),
 
     path(route='', view=views.dashboard, name='dashboard'),
+    path(route='users/', view=views.user_list, name='user_list'),
+    path(route='users/<username>/', view=views.user_detail, name='user_detail'),
 ]
