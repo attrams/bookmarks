@@ -7,6 +7,7 @@ from django.http import JsonResponse
 
 from .forms import UserRegistrationForm, UserEditForm, ProfileEditForm
 from .models import Profile, Contact
+from actions.utils import create_action
 
 # Create your views here.
 
@@ -57,6 +58,7 @@ def register(request):
             new_user.save()
             # create the user profile
             Profile.objects.create(user=new_user)
+            create_action(new_user, 'has created an account')
             return render(request=request, template_name='account/register_done.html', context={'new_user': new_user})
     else:
         user_form = UserRegistrationForm()
@@ -116,6 +118,7 @@ def user_follow(request):
             if action == 'follow':
                 Contact.objects.get_or_create(
                     user_from=request.user, user_to=user)
+                create_action(request.user, 'is following', user)
             else:
                 Contact.objects.filter(
                     user_from=request.user, user_to=user).delete()
