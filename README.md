@@ -15,6 +15,7 @@ You can use the default `python manage.py runserver` to run the project or `pyth
 - Like and Unlike images.
 - Infinite Scroll.
 - Follow and Unfollow.
+- Activity System.
 
 ## Libraries used
 
