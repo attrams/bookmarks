@@ -26,6 +26,7 @@ You can use the default `python manage.py runserver` to run the project or `pyth
   - [pyOpenSSL](https://pypi.org/project/pyOpenSSL/) - which is required to use SSL/TLS functionality of RunServerPlus.
 - [requests](https://requests.readthedocs.io/en/latest/) - for downloading image by its URL.
 - [easy-thumbnails](https://github.com/SmileyChris/easy-thumbnails) - for generating thumbnails of images. -[js-cookie](https://github.com/js-cookie/js-cookie) - javascript script API for handling cookies.
+- [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/) - to see relevant debug information about the current request/response cycle.
 
 ## PS
 
