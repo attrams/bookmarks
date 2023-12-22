@@ -10,7 +10,7 @@ You can use the default `python manage.py runserver` to run the project or `pyth
 
 - Authentication.
 - Password change and reset.
-- Social Authentication(Google and Apple).
+- Social Authentication(Google).
 - Downloading Images.
 - Like and Unlike images.
 - Infinite Scroll.
@@ -27,6 +27,7 @@ You can use the default `python manage.py runserver` to run the project or `pyth
 - [requests](https://requests.readthedocs.io/en/latest/) - for downloading image by its URL.
 - [easy-thumbnails](https://github.com/SmileyChris/easy-thumbnails) - for generating thumbnails of images. -[js-cookie](https://github.com/js-cookie/js-cookie) - javascript script API for handling cookies.
 - [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/) - to see relevant debug information about the current request/response cycle.
+- [redis](https://redis-py.readthedocs.io/en/stable/) - for storing the image views
 
 ## PS
 
